@@ -1,0 +1,29 @@
+{
+  "name": "learn-babel",
+  "version": "1.0.0",
+  "description": "learn babel-handbook",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cleam/learn-babel.git"
+  },
+  "keywords": [],
+  "author": "lizhigao <lizhigao1231@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cleam/learn-babel/issues"
+  },
+  "homepage": "https://github.com/Cleam/learn-babel#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "core-js": "^3.6.5"
+  }
+}
