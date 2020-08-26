@@ -1,3 +1,3 @@
-function square(n) {
-  return n * n;
+function square(_n) {
+  return _n * _n;
 }

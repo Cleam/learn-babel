@@ -23,7 +23,12 @@ module.exports = function ({ types: t }) {
         // push一个变量声明到父级作用域中
         // // path.remove();
         // // path.scope.parent.push({ id, init: path.node });
-        
+
+        // 重命名绑定及其引用
+        // console.log(path.scope);
+        // console.log(path.node === path.scope.block);  // true
+        // path.scope.rename('n', 'x');
+        path.scope.rename('n'); // 重命名成一个唯一标识符
       },
     },
   };
