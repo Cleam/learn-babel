@@ -4,7 +4,9 @@
   "description": "learn babel-handbook",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib",
+    "test-plugins": "babel plugins/$1/code_*.js --out-dir plugins/output",
+    "tp": "node plugins/script.js"
   },
   "repository": {
     "type": "git",

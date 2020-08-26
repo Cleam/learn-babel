@@ -8,6 +8,5 @@
         "corejs": "3"
       }
     ]
-  ],
-  "plugins": ["./plugins/babel-plugin-p1"]
+  ]
 }
