@@ -1,5 +1,3 @@
-"use strict";
-
 function abc() {
   console.time("abc")
 
