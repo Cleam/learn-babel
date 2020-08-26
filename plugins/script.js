@@ -2,14 +2,22 @@ const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
 const babel = require('@babel/core');
+
 const root = path.join(__dirname);
 
 const resolve = (relativePath) => path.resolve(__dirname, relativePath);
 
 const babelBuild = (name) => {
-  const options = {
-    plugins: [resolve(`./${name}/babel-plugin-${name}`)],
-  };
+  let options;
+  try {
+    options = JSON.parse(fs.readFileSync(resolve(`./${name}/.babelrc`), 'utf-8'));
+    options.plugins[0][0] = resolve(`./${name}/babel-plugin-${name}`);
+  } catch (error) {}
+  if (!options) {
+    options = {
+      plugins: [resolve(`./${name}/babel-plugin-${name}`)],
+    };
+  }
 
   const { code } = babel.transformSync(fs.readFileSync(resolve(`./${name}/code.js`)), options);
   // console.log(code);

@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    [
+      "./babel-plugin-p8",
+      {
+        "opt1": true,
+        "opt2": false
+      }
+    ]
+  ]
+}

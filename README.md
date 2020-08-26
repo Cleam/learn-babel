@@ -32,3 +32,11 @@ export default function () {
   };
 }
 ```
+
+## plugins
+
+- p1：往 function 中插入时间计算代码（console.time console.timeEnd）
+- p2 p3 p4 p5：代码操作（往源码插入、删除、替换代码等）
+- p6：作用域（scope）
+- p7：函数声明转换成函数表达式（变量声明+函数表达式）
+- p8：插件参数（Plugin Options）
