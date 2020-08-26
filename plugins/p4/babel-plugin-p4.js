@@ -1,4 +1,4 @@
-// 使用多个节点替换一个节点
+// 替换变量
 module.exports = function ({ types: t }) {
   return {
     visitor: {
