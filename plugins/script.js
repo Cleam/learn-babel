@@ -25,7 +25,7 @@ for (const d of dirs) {
   const info = fs.statSync(root + '/' + d);
   if (info.isDirectory()) {
     console.log('\n');
-    console.log(chalk.green(root + '/' + d + ': '));
+    console.log(chalk.green(root + '/' + d));
     babelBuild(d);
   }
 }
