@@ -4,9 +4,8 @@
   "description": "learn babel-handbook",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir lib",
-    "test-plugins": "babel plugins/$1/code_*.js --out-dir plugins/output",
-    "tp": "node plugins/script.js"
+    "build": "babel src --out-dir build",
+    "test-plugins": "node plugins/script.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,8 @@
     "@babel/core": "^7.11.4",
     "@babel/helpers": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
-    "@babel/types": "^7.11.0"
+    "@babel/types": "^7.11.0",
+    "chalk": "^4.1.0"
   },
   "dependencies": {
     "@babel/parser": "^7.11.4",
