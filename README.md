@@ -2,6 +2,19 @@
 
 learn babel-handbook
 
+## 开发
+
+```bash
+# 编译
+npm run build
+
+# 运行插件
+npm run test-plugins
+
+# 运行测试
+npm run test
+```
+
 ## 预设 @babel/preset-env
 
 - [`targets`](https://babeljs.io/docs/en/next/babel-preset-env.html#targets)
