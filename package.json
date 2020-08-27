@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir build",
-    "test-plugins": "node plugins/script.js"
+    "test-plugins": "node plugins/script.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
     "@babel/helpers": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/types": "^7.11.0",
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.0",
+    "jest": "^26.4.2"
   },
   "dependencies": {
     "@babel/parser": "^7.11.4",

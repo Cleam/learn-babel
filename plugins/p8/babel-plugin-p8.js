@@ -5,11 +5,12 @@ module.exports = function ({ types: t }) {
     },
     visitor: {
       FunctionDeclaration(path, state) {
-        console.log(state.opts);
+        console.log('[visitor]', state.opts);
+        console.log('[visitor]', this.cache);
       },
     },
     post(state) {
-      console.log(this.cache);
+      console.log('[post]', this.cache);
     },
   };
 };

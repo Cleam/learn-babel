@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works 1`] = `
+"var _square = function square(n) {
+  return n * n;
+};"
+`;
